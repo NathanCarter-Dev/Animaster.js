@@ -1,0 +1,20 @@
+Animaster is a free animation library aimed at making your web development process easier.
+
+Arguments:
+speed - fast/medium/slow
+opacity - 0-100/100-0/100-50/0-50
+pixels - 20/40/60/80/100
+
+Syntax: animation-speed-(opacity|pixels)
+e.g: flyinleft-fast-60
+
+List of animations:
+
+Hover Effects:
+zoomin - speed
+zoomout - speed
+floatup - speed
+floatdown - speed
+pulse - speed
+
+Event Effects:

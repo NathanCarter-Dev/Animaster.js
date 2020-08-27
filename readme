@@ -1,20 +1,44 @@
 Animaster is a free animation library aimed at making your web development process easier.
 
 Arguments:
-speed - fast/medium/slow
+speed - fast/medium/slow/veryfast/veryslow
 opacity - 0-100/100-0/100-50/0-50
 pixels - 20/40/60/80/100
 
-Syntax: animation-speed-(opacity|pixels)
-e.g: flyinleft-fast-60
+
+Syntax: animation-(opacity|pixels|degrees) speed
+e.g: flyinleft speed-fast
 
 List of animations:
 
-Hover Effects:
-zoomin - speed
-zoomout - speed
-floatup - speed
-floatdown - speed
-pulse - speed
+Hover Effects: 
+zoomin
+zoomout
+floatup
+floatdown
+floatleft
+floatright
+pulse
+bob
+bgleftfill
+bgrightfill
+bgfade
+borderfade
+unblur
+blur
+ungrayscale
+grayscale
+blurgrayscale
+unblurgrayscale
+glow
+buttonarrow | USE: <button class="buttonarrow-speed" style=""><span>Hover </span></button>
+
 
 Event Effects:
+opacity-speed-opacity
+flyinleft-speed
+flyinleft-speed-pixels
+flyinright-speed
+flyinright-speed-pixels
+spin-speed
+spinonce-speed

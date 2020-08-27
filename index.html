@@ -4,14 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animaster.js</title>
+
   <link rel="stylesheet" type="text/css" href="./index.css">
   <link rel="stylesheet" type="text/css" href="./Animaster.css">
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="landing">
+    <div class="grid">
+      <div class="box-1 flyinleft-60 speed-slow">
 
-  <div class="opacity-slow-0-100">
-    <h1 class="floatdown-slow">Animaster.js</h1>
+          <h1 class="title ">ANIMASTER</h1>
+          <h2 class="title-p">Build fast animations with Animasters vast library</h2>
+        
+        <button class="get-started bob speed-slow">Get Started</button>
+        <a href="./Animaster.css" download><button class="download bob speed-slow">Download</button></a>
+        
+            </div>
+            
+    </div>
+    <div class="test">
+      <img id="logo" class="logo speed-medium" src="./Images/Untitled.png" alt="">
+      
+    </div>
+    <button id="logo" class="button-test buttonoutline speed-slow"><span>Button</span></button>
+    <div class="container">
+    <div class="buttons">
+      <form id="">
+        <select name="hover" id="hover">
+          <option value="" selected disabled>Hover effects</option>
+          <optgroup label="general">
+            <option value="zoomin">zoomin</option>
+          <option value="zoomout">zoomout</option>
+          <option value="floatup">floatup</option>
+          <option value="floatdown">floatdown</option>
+          <option value="floatleft">floatleft</option>
+          <option value="floatright">floatright</option>
+          <option value="bob">bob</option>
+          <option value="pulse">pulse</option>
+          <option value="bgleftfill">bgleftfill</option>
+          <option value="bgrightfill">bgrightfill</option>
+          <option value="bgfade">bgfade</option>
+          <option value="borderfade">borderfade</option>
+          <option value="unblur">unblur</option>
+          <option value="blur">blur</option>
+          <option value="ungrayscale">ungrayscale</option>
+          <option value="grayscale">grayscale</option>
+          <option value="blurgrayscale">blurgrayscale</option>
+          <option value="unblurgrayscale">unblurgrayscale</option>
+          <option value="glow">glow</option>
+          </optgroup>
+          <optgroup label="buttons">
+            <option value="buttonarrow">buttonarrow</option>
+            <option value="buttonripple">buttonripple</option>
+            <option value="buttonexplode1">buttonexplode1</option>
+            <option value="buttonexplode2">buttonexplode2</option>
+
+          </optgroup>
+          
+          
+        </select>
+
+      </form>
+      <button onclick="hoverFunc()" class="animate">Animate</button>
+    </div>
+    <div class="buttons">
+      <form id="" >
+        <select id="event" name="event" id="">
+          <option value="" selected disabled>Event effects</option>
+          <optgroup label="opacity">
+            <option value="opacity-0-100">opacity-0-100</option>
+            <option value="opacity-100-0">opacity-100-0</option>
+            <option value="opacity-0-50">opacity-0-50</option>
+            <option value="opacity-100-50">opacity-100-50</option>
+          </optgroup>
+          <optgroup label="flyin">
+            <option value="flyinleft">flyinleft</option>
+            <option value="flyinleft-20">flyinleft-20</option>
+            <option value="flyinleft-40">flyinleft-40</option>
+            <option value="flyinleft-60">flyinleft-60</option>
+            <option value="flyinleft-80">flyinleft-80</option>
+            <option value="flyinleft-100">flyinleft-100</option>
+            <option value="flyinright">flyinright</option>
+            <option value="flyinright-20">flyinright-20</option>
+            <option value="flyinright-40">flyinright-40</option>
+            <option value="flyinright-60">flyinright-60</option>
+            <option value="flyinright-80">flyinright-80</option>
+            <option value="flyinright-100">flyinright-100</option>
+          </optgroup>
+          <option value="spin">spin</option>
+          <option value="spinonce">spinonce</option>
+          
+        </select>
+
+      </form>
+      <button onclick="eventFunc()" class="animate">Animate</button>
+    </div>
   </div>
-  
+    <img class="triangle" src="./Images/Polygon 1.png" alt="">
+    <script type="text/javascript" src="./animateExamples.js"></script>
 </body>
 </html>

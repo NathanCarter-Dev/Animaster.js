@@ -17,8 +17,12 @@
           <h1 class="title ">ANIMASTER</h1>
           <h2 class="title-p">Build fast animations with Animasters vast library</h2>
         
-        <button class="get-started bob speed-slow">Get Started</button>
-        <a href="./Animaster.css" download><button class="download bob speed-slow">Download</button></a>
+        <button class="get-started floatup speed-slow" onclick="window.scroll({
+          top: 1080,
+          left: 0,
+          behavior: 'smooth'
+        });";>Get Started</button>
+        <a href="./Animaster.css" download><button class="download floatup speed-slow">Download</button></a>
         
             </div>
             
@@ -34,31 +38,30 @@
         <select name="hover" id="hover">
           <option value="" selected disabled>Hover effects</option>
           <optgroup label="general">
-            <option value="zoomin">zoomin</option>
-          <option value="zoomout">zoomout</option>
-          <option value="floatup">floatup</option>
-          <option value="floatdown">floatdown</option>
-          <option value="floatleft">floatleft</option>
-          <option value="floatright">floatright</option>
-          <option value="bob">bob</option>
-          <option value="pulse">pulse</option>
-          <option value="bgleftfill">bgleftfill</option>
-          <option value="bgrightfill">bgrightfill</option>
-          <option value="bgfade">bgfade</option>
-          <option value="borderfade">borderfade</option>
-          <option value="unblur">unblur</option>
-          <option value="blur">blur</option>
-          <option value="ungrayscale">ungrayscale</option>
-          <option value="grayscale">grayscale</option>
-          <option value="blurgrayscale">blurgrayscale</option>
-          <option value="unblurgrayscale">unblurgrayscale</option>
-          <option value="glow">glow</option>
+            <option value="zoomin|<button class='zoomin speed-medium'>test button</button>">zoomin</option>
+          <option value="zoomout|<button class='zoomout speed-medium'>test button</button>">zoomout</option>
+          <option value="floatup|<button class='floatup speed-medium'>test button</button>">floatup</option>
+          <option value="floatdown|<button class='floatdown speed-medium'>test button</button>">floatdown</option>
+          <option value="floatleft|<button class='floatleft speed-medium'>test button</button>">floatleft</option>
+          <option value="floatright|<button class='floatright speed-medium'>test button</button>">floatright</option>
+          <option value="bob|<button class='bob speed-medium'>test button</button>">bob</option>
+          <option value="pulse|<button class='pulse speed-medium'>test button</button>">pulse</option>
+          <option value="bgleftfill|<button class='bgleftfill speed-medium'>test button</button>">bgleftfill</option>
+          <option value="bgrightfill|<button class='bgrightfill speed-medium'>test button</button>">bgrightfill</option>
+          <option value="bgfade|<button class='bgfade speed-medium'>test button</button>">bgfade</option>
+          <option value="unblur|<button class='unblur speed-medium'>test button</button>">unblur</option>
+          <option value="blur|<button class='blur speed-medium'>test button</button>">blur</option>
+          <option value="ungrayscale|<button class='ungrayscale speed-medium'>test button</button>">ungrayscale</option>
+          <option value="grayscale|<button class='grayscale speed-medium'>test button</button>">grayscale</option>
+          <option value="blurgrayscale|<button class='blurgrayscale speed-medium'>test button</button>">blurgrayscale</option>
+          <option value="unblurgrayscale|<button class='unblurgrayscale speed-medium'>test button</button>">unblurgrayscale</option>
+          <option value="glow|<button class='glow speed-medium'>test button</button>">glow</option>
           </optgroup>
           <optgroup label="buttons">
-            <option value="buttonarrow">buttonarrow</option>
-            <option value="buttonripple">buttonripple</option>
-            <option value="buttonexplode1">buttonexplode1</option>
-            <option value="buttonexplode2">buttonexplode2</option>
+            <option value="buttonarrow|<button class='buttonarrow speed-medium'><span>test button</span></button>">buttonarrow</option>
+            <option value="buttonripple|<button class='buttonripple speed-medium'>test button</button>">buttonripple</option>
+            <option value="buttonexplode1|<button class='buttonexplode1 speed-medium'>test button</button>">buttonexplode1</option>
+            <option value="buttonexplode2|<button class='buttonexplode2 speed-medium'>test button</button>">buttonexplode2</option>
 
           </optgroup>
           
@@ -66,42 +69,51 @@
         </select>
 
       </form>
-      <button onclick="hoverFunc()" class="animate">Animate</button>
+      <button onclick="hoverFunc()" class="animate">Add hover</button>
     </div>
     <div class="buttons">
       <form id="" >
         <select id="event" name="event" id="">
           <option value="" selected disabled>Event effects</option>
           <optgroup label="opacity">
-            <option value="opacity-0-100">opacity-0-100</option>
-            <option value="opacity-100-0">opacity-100-0</option>
-            <option value="opacity-0-50">opacity-0-50</option>
-            <option value="opacity-100-50">opacity-100-50</option>
+            <option value="opacity-0-100|<button class='opacity-0-100 speed-medium'>test button</button>">opacity-0-100</option>
+            <option value="opacity-100-0|<button class='opacity-100-0 speed-medium'>test button</button>">opacity-100-0</option>
+            <option value="opacity-0-50|<button class='opacity-0-50 speed-medium'>test button</button>">opacity-0-50</option>
+            <option value="opacity-100-50|<button class='opacity-100-50 speed-medium'>test button</button>">opacity-100-50</option>
           </optgroup>
           <optgroup label="flyin">
-            <option value="flyinleft">flyinleft</option>
-            <option value="flyinleft-20">flyinleft-20</option>
-            <option value="flyinleft-40">flyinleft-40</option>
-            <option value="flyinleft-60">flyinleft-60</option>
-            <option value="flyinleft-80">flyinleft-80</option>
-            <option value="flyinleft-100">flyinleft-100</option>
-            <option value="flyinright">flyinright</option>
-            <option value="flyinright-20">flyinright-20</option>
-            <option value="flyinright-40">flyinright-40</option>
-            <option value="flyinright-60">flyinright-60</option>
-            <option value="flyinright-80">flyinright-80</option>
-            <option value="flyinright-100">flyinright-100</option>
+            <option value="flyinleft|<button class='flyinleft speed-medium'>test button</button>">flyinleft</option>
+            <option value="flyinleft-20|<button class='flyinleft-20 speed-medium'>test button</button>">flyinleft-20</option>
+            <option value="flyinleft-40|<button class='flyinleft-40 speed-medium'>test button</button>">flyinleft-40</option>
+            <option value="flyinleft-60|<button class='flyinleft-60 speed-medium'>test button</button>">flyinleft-60</option>
+            <option value="flyinleft-80|<button class='flyinleft-80 speed-medium'>test button</button>">flyinleft-80</option>
+            <option value="flyinleft-100|<button class='flyinleft-100 speed-medium'>test button</button>">flyinleft-100</option>
+            <option value="flyinright|<button class='flyinright speed-medium'>test button</button>">flyinright</option>
+            <option value="flyinright-20|<button class='flyinright-20 speed-medium'>test button</button>">flyinright-20</option>
+            <option value="flyinright-40|<button class='flyinright-40 speed-medium'>test button</button>">flyinright-40</option>
+            <option value="flyinright-60|<button class='flyinright-60 speed-medium'>test button</button>">flyinright-60</option>
+            <option  value="flyinright-80|<button class='flyinright-80 speed-medium'>test button</button>">flyinright-80</option>
+            <option value="flyinright-100|<button class='flyinright-100 speed-medium'>test button</button>">flyinright-100</option>
           </optgroup>
-          <option value="spin">spin</option>
-          <option value="spinonce">spinonce</option>
+          <option value="spin|<button class='spin speed-medium'>test button</button>">spin</option>
+          <option value="spinonce|<button class='spinonce speed-medium'>test button</button>">spinonce</option>
           
         </select>
 
       </form>
       <button onclick="eventFunc()" class="animate">Animate</button>
     </div>
+
+  </div>
+  <div class="use">
+    <p id="use"></p>
   </div>
     <img class="triangle" src="./Images/Polygon 1.png" alt="">
+    <div class="documentation">
+      <h2 class="title usage">Usage</h1>
+        <hr>
+        <p>After installing Animaster.css, to add an animation, choose animation name followed by the speed you want your animation to play at.</p>
+    </div>
     <script type="text/javascript" src="./animateExamples.js"></script>
 </body>
 </html>

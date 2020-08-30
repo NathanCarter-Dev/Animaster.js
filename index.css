@@ -43,7 +43,16 @@ option {
   color: white;
 }
 #use {
+  margin-top: 1rem;
   display: block;
+}
+.useeg {
+  width: fit-content;
+  border-radius: 10px;
+  height: fit-content;
+  margin: 10px auto;
+  padding: 1rem;
+  background-color: rgb(60, 156, 143);
 }
 .usage {
   text-align: center;
@@ -51,7 +60,7 @@ option {
 }
 p {
   color: #ffffff;
-  margin-top: 1rem;
+  
   font-size: 1.3rem;
   text-align: center;
 }
@@ -139,6 +148,23 @@ box-shadow: 2px 6px 12px -5px rgba(0,0,0,0.7);
   height: 3.5rem;
   font-size: 1.5rem;
   border-radius: 0px 0px 15px 15px;
+  color: #ffffff;
+}
+button {
+  
+  -webkit-box-shadow: 2px 6px 12px -5px rgba(0,0,0,0.7);
+-moz-box-shadow: 2px 6px 12px -5px rgba(0,0,0,0.7);
+box-shadow: 2px 6px 12px -5px rgba(0,0,0,0.7);
+  background-color: #48ad8b;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  width: 10rem;
+  transition: 0.3s ;
+  -webkit-transition: 0.3s;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
   color: #ffffff;
 }
 .form {

@@ -14,11 +14,11 @@
     <div class="grid">
       <div class="box-1 flyinleft-60 speed-slow">
 
-          <h1 class="title speed-medium">ANIMASTER</h1>
-          <h2 class="title-p">Build fast animations with Animasters vast library</h2>
+          <h1 class="title underlinecentergrow speed-fast"><span>ANIMASTER</span></h1>
+          <h2 class="title-p">Build fast animations with Animasters vast pure css library</h2>
         
         <button class="get-started floatup speed-slow" onclick="window.scroll({
-          top: 1080,
+          top: 1000,
           left: 0,
           behavior: 'smooth'
         });";>Get Started</button>
@@ -48,27 +48,31 @@
 
 
 
-          <option value="glow|<button class='glow speed-medium'>test button</button>">glow</option>
+          <option value="glow|<button class='glow speed-medium'>hover me</button>">glow</option>
+          <optgroup label="border">
+            <option value="borderappear|<button class='borderappear speed-medium'>hover me</button>">borderappear</option>
+            <option value="borderdraw|<button class='borderdraw speed-medium'>hover me</button>">borderdraw</option>
+          </optgroup>
           <optgroup label="float">
-            <option value="floatup|<button class='floatup speed-medium'>test button</button>">floatup</option>
-            <option value="floatdown|<button class='floatdown speed-medium'>test button</button>">floatdown</option>
-            <option value="floatleft|<button class='floatleft speed-medium'>test button</button>">floatleft</option>
-            <option value="floatright|<button class='floatright speed-medium'>test button</button>">floatright</option>
+            <option value="floatup|<button class='floatup speed-medium'>hover me</button>">floatup</option>
+            <option value="floatdown|<button class='floatdown speed-medium'>hover me</button>">floatdown</option>
+            <option value="floatleft|<button class='floatleft speed-medium'>hover me</button>">floatleft</option>
+            <option value="floatright|<button class='floatright speed-medium'>hover me</button>">floatright</option>
           </optgroup>
           <optgroup label="grayscale">
-            <option value="ungrayscale|<button class='ungrayscale speed-medium'>test button</button>">ungrayscale</option>
-            <option value="grayscale|<button class='grayscale speed-medium'>test button</button>">grayscale</option>
-            <option value="unblurgrayscale|<button class='unblurgrayscale speed-medium'>test button</button>">unblurgrayscale</option>
+            <option value="ungrayscale|<button class='ungrayscale speed-medium'>hover me</button>">ungrayscale</option>
+            <option value="grayscale|<button class='grayscale speed-medium'>hover me</button>">grayscale</option>
+            <option value="unblurgrayscale|<button class='unblurgrayscale speed-medium'>hover me</button>">unblurgrayscale</option>
           </optgroup>
           <optgroup label="blur">
-            <option value="unblur|<button class='unblur speed-medium'>test button</button>">unblur</option>
-            <option value="blur|<button class='blur speed-medium'>test button</button>">blur</option>
-            <option value="blurgrayscale|<button class='blurgrayscale speed-medium'>test button</button>">blurgrayscale</option>
+            <option value="unblur|<button class='unblur speed-medium'>hover me</button>">unblur</option>
+            <option value="blur|<button class='blur speed-medium'>hover me</button>">blur</option>
+            <option value="blurgrayscale|<button class='blurgrayscale speed-medium'>hover me</button>">blurgrayscale</option>
           </optgroup>
           <optgroup label="background">
-            <option value="bgleftfill|<button class='bgleftfill speed-medium'>test button</button>">bgleftfill</option>
-            <option value="bgrightfill|<button class='bgrightfill speed-medium'>test button</button>">bgrightfill</option>
-            <option value="bgfade|<button class='bgfade speed-medium'>test button</button>">bgfade</option>
+            <option value="bgleftfill|<button class='bgleftfill speed-medium'>hover me</button>">bgleftfill</option>
+            <option value="bgrightfill|<button class='bgrightfill speed-medium'>hover me</button>">bgrightfill</option>
+            <option value="bgfade|<button class='bgfade speed-medium'>hover me</button>">bgfade</option>
           </optgroup>
           <optgroup label="line">
             <option value="linebottomgrow|<p>this is <span class='linebottomgrow speed-medium'>test line</span></p>">linebottomgrow</option>
@@ -80,14 +84,15 @@
             <option value="underlinecentergrow|<p class='underlinecentergrow speed-medium'>this is <span>test line</span></p>">underlinecentergrow</option>
             <option value="underlineleftgrow|<p class='speed-medium'>this is <span class='underlineleftgrow'>test line</span></p>">underlineleftgrow</option>
             <option value="underlinerightgrow|<p class='speed-medium'>this is <span class='underlinerightgrow'>test line</span></p>">underlinerightgrow</option>
-
+            <option value="underlinetextgrow|        <style> .underlinetextgrow span:before { content: 'Example content';}</style>
+              <p class='underlinetextgrow speed-medium' >this is <span>test line</span></p>">underlinetextgrow</option>
           </optgroup>
           </optgroup>
           <optgroup label="buttons">
-            <option value="buttonarrow|<button class='buttonarrow speed-medium'><span>test button</span></button>">buttonarrow</option>
-            <option value="buttonripple|<button class='buttonripple speed-medium'>test button</button>">buttonripple</option>
-            <option value="buttonexplode1|<button class='buttonexplode1 speed-medium'>test button</button>">buttonexplode1</option>
-            <option value="buttonexplode2|<button class='buttonexplode2 speed-medium'>test button</button>">buttonexplode2</option>
+            <option value="buttonarrow|<button class='buttonarrow speed-medium'><span>hover me</span></button>">buttonarrow</option>
+            <option value="buttonripple|<button class='buttonripple speed-medium'>click me</button>">buttonripple</option>
+            <option value="buttonexplode1|<button class='buttonexplode1 speed-medium'>hover me</button>">buttonexplode1</option>
+            <option value="buttonexplode2|<button class='buttonexplode2 speed-medium'>hover me</button>">buttonexplode2</option>
           </optgroup>
           
           
@@ -138,12 +143,13 @@
     </div>
     
   </div>
+
     <img class="triangle" src="./Images/Polygon 1.png" alt="">
     <div class="documentation">
       <h2 class="title usage">Usage</h2>
         <hr>
         <h2 class="subtitle">Installation</h2>
-        <p>To install Animaster, simply click <a href="./Animaster.css" download>Download</a> and then drop the css file in your project directory. You will then have access to all the Animaster classes by using the &ltlink&gt tags in your html to find Animaster.css</p>
+        <p>To install Animaster, simply click <a href="./Animaster.css" download><span class='linebottomgrow speed-medium'>Download</span></a> and then drop the css file in your project directory. You will then have access to all the Animaster classes by using the &ltlink&gt tags in your html to find Animaster.css</p>
         <h2 class="subtitle">Basic usage</h2>
         <p class="">After installing Animaster.css, to add an animation, choose animation name followed by the speed you want your animation to play at.</p>
         <p>&lt<span class="red">button class</span>="<span class="green">blur speed-slow</span>"&gt<span class="green">Button Example</span>&lt/<span class="red">button</span>&gt</p>

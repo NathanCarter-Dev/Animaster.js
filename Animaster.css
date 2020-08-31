@@ -16,11 +16,7 @@ Animation-speed-arg1-arg2
 animations are sectioned into hover effects and on event animations
 */
 :root {
-  --fast: 0.5s;
-  --medium: 1s;
-  --slow:1.5s:
-  --veryfast: 0.25s;
-  --veryslow: 2s;
+  --speed: 1s;
 }
 
 .delay-veryfast {
@@ -49,39 +45,40 @@ animations are sectioned into hover effects and on event animations
   animation-duration: 0.5s;
   -webkit-transition: .5s;
   -webkit-animation-duration: .5s;
-
+  --speed: 0.5s;
 }
 
 .speed-medium,.speed-medium span:before,.speed-medium:after {
-  transition: 1s;
+  transition: all 1s;
   animation-duration: 1s;
-  -webkit-transition: 1s;
+  -webkit-transition: all 1s;
   -webkit-animation-duration: 1s;
-
+  --speed: 1s;
 }
 
-.speed-slow,.speed-slow span:before,.speed-slow:after {
-  transition: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-transition: 1.5s;
-  -webkit-animation-duration: 1.5s;
 
+.speed-slow,.speed-slow span:before,.speed-slow:after {
+  transition: all 1.5s;
+  animation-duration: 1.5s;
+  -webkit-transition: all 1.5s;
+  -webkit-animation-duration: 1.5s;
+  --speed: 1.5s;
 }
 
 .speed-veryfast,.speed-veryfast span:before,.speed-veryfast:after {
-  transition: 0.25s;
+  transition: all 0.25s;
   animation-duration: 0.25s;
-  -webkit-transition: 0.25s;
+  -webkit-transition: all 0.25s;
   -webkit-animation-duration: 0.25s;
-
+  --speed: 0.25s;
 }
 
 .speed-veryslow,.speed-veryslow:after,.speed-veryslow span:before {
-  transition: 2s;
+  transition: 2s all;
   animation-duration: 2s;
-  -webkit-transition: 2s;
+  -webkit-transition: all 2s;
   -webkit-animation-duration: 2s;
-
+  --speed: 2s;
 }
 
 /* \\====================================ZOOM===================================// */
@@ -90,7 +87,100 @@ animations are sectioned into hover effects and on event animations
 /* zoom animation keyframes */
 
 /* \\===========================================================================// */
+/* \\================================borderappear===================================// */
 
+.borderappear {
+
+  border: 0px solid;
+}
+
+.borderappear:hover {
+  border: 3px solid;
+}
+
+/* \\===========================================================================// */
+
+/* \\=================================borderdraw===================================// */
+
+.borderdraw {
+  position: relative;
+  transition: none;
+  border: none;
+ }
+ .borderdraw:before {
+   position: absolute;
+   content: '';
+   
+   left: 0;
+   height: 0;
+   width: 0;
+   transition: none;
+   border: 5px solid transparent;
+   bottom: 0;
+   box-sizing: border-box;
+ }
+ .borderdraw:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  transition: none;
+  top: 0;
+  box-sizing: border-box;
+ }
+ .borderdraw:hover:before{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 100%;
+   width: 100%;
+   border: 5px solid ;
+   border-right: none;
+   border-bottom: none;
+
+   transition: var(--speed) linear,
+               width var(--speed) linear var(--speed);
+ }
+ .borderdraw:hover:after{
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+  border: 5px solid ;
+  border-left: none;
+  border-top: none;
+  
+  transition: height var(--speed) linear,
+  width var(--speed) linear var(--speed);
+
+}
+
+/* \\===========================================================================// */
+/* \\==============================underlinetext===================================// */
+.underlinetextgrow span {
+  position: relative;
+  text-decoration: none;
+}
+.underlinetextgrow span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+.underlinetextgrow span:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* \\===========================================================================// */
 /* \\===============================linedrop================================// */
 
 .underlinecentergrow span {
@@ -557,6 +647,7 @@ animations are sectioned into hover effects and on event animations
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  
 }
 .bob:hover, .bob-on-hover:focus, .bob-on-hover:active {
   -webkit-animation-name: bob-on-hover-float, bob-on-hover;
@@ -565,6 +656,7 @@ animations are sectioned into hover effects and on event animations
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
   -webkit-animation-iteration-count: 1, infinite;
+  
   animation-iteration-count: 1, infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;

@@ -39,21 +39,32 @@
           <optgroup label="general">
             <option value="zoomin|<button class='zoomin speed-medium'>test button</button>">zoomin</option>
           <option value="zoomout|<button class='zoomout speed-medium'>test button</button>">zoomout</option>
-          <option value="floatup|<button class='floatup speed-medium'>test button</button>">floatup</option>
-          <option value="floatdown|<button class='floatdown speed-medium'>test button</button>">floatdown</option>
-          <option value="floatleft|<button class='floatleft speed-medium'>test button</button>">floatleft</option>
-          <option value="floatright|<button class='floatright speed-medium'>test button</button>">floatright</option>
+
           <option value="bob|<button class='bob speed-medium'>test button</button>">bob</option>
           <option value="pulse|<button class='pulse speed-medium'>test button</button>">pulse</option>
 
           
-          <option value="unblur|<button class='unblur speed-medium'>test button</button>">unblur</option>
-          <option value="blur|<button class='blur speed-medium'>test button</button>">blur</option>
-          <option value="ungrayscale|<button class='ungrayscale speed-medium'>test button</button>">ungrayscale</option>
-          <option value="grayscale|<button class='grayscale speed-medium'>test button</button>">grayscale</option>
-          <option value="blurgrayscale|<button class='blurgrayscale speed-medium'>test button</button>">blurgrayscale</option>
-          <option value="unblurgrayscale|<button class='unblurgrayscale speed-medium'>test button</button>">unblurgrayscale</option>
+
+
+
+
           <option value="glow|<button class='glow speed-medium'>test button</button>">glow</option>
+          <optgroup label="float">
+            <option value="floatup|<button class='floatup speed-medium'>test button</button>">floatup</option>
+            <option value="floatdown|<button class='floatdown speed-medium'>test button</button>">floatdown</option>
+            <option value="floatleft|<button class='floatleft speed-medium'>test button</button>">floatleft</option>
+            <option value="floatright|<button class='floatright speed-medium'>test button</button>">floatright</option>
+          </optgroup>
+          <optgroup label="grayscale">
+            <option value="ungrayscale|<button class='ungrayscale speed-medium'>test button</button>">ungrayscale</option>
+            <option value="grayscale|<button class='grayscale speed-medium'>test button</button>">grayscale</option>
+            <option value="unblurgrayscale|<button class='unblurgrayscale speed-medium'>test button</button>">unblurgrayscale</option>
+          </optgroup>
+          <optgroup label="blur">
+            <option value="unblur|<button class='unblur speed-medium'>test button</button>">unblur</option>
+            <option value="blur|<button class='blur speed-medium'>test button</button>">blur</option>
+            <option value="blurgrayscale|<button class='blurgrayscale speed-medium'>test button</button>">blurgrayscale</option>
+          </optgroup>
           <optgroup label="background">
             <option value="bgleftfill|<button class='bgleftfill speed-medium'>test button</button>">bgleftfill</option>
             <option value="bgrightfill|<button class='bgrightfill speed-medium'>test button</button>">bgrightfill</option>
@@ -66,6 +77,10 @@
             <option value="linerightgrow|<p>this is <span class='linerightgrow speed-medium'>test line</span></p>">linerightgrow</option>
             <option value="lineopacity|<p>this is <span class='lineopacity speed-medium'>test line</span></p>">lineopacity</option>
             <option value="unlineopacity|<p>this is <span class='unlineopacity speed-medium'>test line</span></p>">unlineopacity</option>
+            <option value="underlinecentergrow|<p class='underlinecentergrow speed-medium'>this is <span>test line</span></p>">underlinecentergrow</option>
+            <option value="underlineleftgrow|<p class='speed-medium'>this is <span class='underlineleftgrow'>test line</span></p>">underlineleftgrow</option>
+            <option value="underlinerightgrow|<p class='speed-medium'>this is <span class='underlinerightgrow'>test line</span></p>">underlinerightgrow</option>
+
           </optgroup>
           </optgroup>
           <optgroup label="buttons">
@@ -115,6 +130,7 @@
     </div>
 
   </div>
+  
   <div class="use">
     <p id="use"></p>
     <div class="useeg">
@@ -124,9 +140,21 @@
   </div>
     <img class="triangle" src="./Images/Polygon 1.png" alt="">
     <div class="documentation">
-      <h2 class="title usage">Usage</h1>
+      <h2 class="title usage">Usage</h2>
         <hr>
-        <p>After installing Animaster.css, to add an animation, choose animation name followed by the speed you want your animation to play at.</p>
+        <h2 class="subtitle">Installation</h2>
+        <p>To install Animaster, simply click <a href="./Animaster.css" download>Download</a> and then drop the css file in your project directory. You will then have access to all the Animaster classes by using the &ltlink&gt tags in your html to find Animaster.css</p>
+        <h2 class="subtitle">Basic usage</h2>
+        <p class="">After installing Animaster.css, to add an animation, choose animation name followed by the speed you want your animation to play at.</p>
+        <p>&lt<span class="red">button class</span>="<span class="green">blur speed-slow</span>"&gt<span class="green">Button Example</span>&lt/<span class="red">button</span>&gt</p>
+
+        <h2 class="subtitle">Using speeds</h2>
+        <p class="">Speeds classes consist of <span class="green">fast</span>(0.5s), <span class="green">medium</span>(1s), <span class="green">slow</span>(1.5s), <span class="green">veryfast</span>(0.25s), <span class="green">veryslow</span>(2s)
+          use case is speed followed by speed intensity e.g <span class="green">speed-veryfast</span></p>
+          <h2 class="subtitle">Using values</h2>
+          <p>values are added onto certain effects. If shown in effect list the various values below can be added onto effects followed by -</p>
+          <p>opacity: <span class="green">0-100</span>/<span class="green">100-0</span>/<span class="green">100-50</span>/<span class="green">0-50</span>. e.g <span class="green">opacity-100-50</span></p>
+          <p>pixels: <span class="green">20</span>/<span class="green">40</span>/<span class="green">60</span>/<span class="green">80</span>/<span class="green">100</span>. e.g <span class="green">flyinright-60</span></p>
     </div>
     <script type="text/javascript" src="./animateExamples.js"></script>
 </body>

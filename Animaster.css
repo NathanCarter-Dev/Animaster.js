@@ -44,14 +44,7 @@ animations are sectioned into hover effects and on event animations
   animation-delay: 2s;
 }
 
-.speed-fast {
-  transition: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-transition: .5s;
-  -webkit-animation-duration: .5s;
-
-}
-.speed-fast:after {
+.speed-fast,.speed-fast span:before,.speed-fast:after {
   transition: 0.5s;
   animation-duration: 0.5s;
   -webkit-transition: .5s;
@@ -59,15 +52,7 @@ animations are sectioned into hover effects and on event animations
 
 }
 
-
-.speed-medium {
-  transition: 1s;
-  animation-duration: 1s;
-  -webkit-transition: 1s;
-  -webkit-animation-duration: 1s;
-
-}
-.speed-medium:after {
+.speed-medium,.speed-medium span:before,.speed-medium:after {
   transition: 1s;
   animation-duration: 1s;
   -webkit-transition: 1s;
@@ -75,15 +60,7 @@ animations are sectioned into hover effects and on event animations
 
 }
 
-
-.speed-slow {
-  transition: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-transition: 1.5s;
-  -webkit-animation-duration: 1.5s;
-
-}
-.speed-slow:after {
+.speed-slow,.speed-slow span:before,.speed-slow:after {
   transition: 1.5s;
   animation-duration: 1.5s;
   -webkit-transition: 1.5s;
@@ -91,14 +68,7 @@ animations are sectioned into hover effects and on event animations
 
 }
 
-.speed-veryfast {
-  transition: 0.25s;
-  animation-duration: 0.25s;
-  -webkit-transition: 0.25s;
-  -webkit-animation-duration: 0.25s;
-
-}
-.speed-veryfast:after {
+.speed-veryfast,.speed-veryfast span:before,.speed-veryfast:after {
   transition: 0.25s;
   animation-duration: 0.25s;
   -webkit-transition: 0.25s;
@@ -106,14 +76,7 @@ animations are sectioned into hover effects and on event animations
 
 }
 
-.speed-veryslow {
-  transition: 2s;
-  animation-duration: 2s;
-  -webkit-transition: 2s;
-  -webkit-animation-duration: 2s;
-
-}
-.speed-veryslow:after {
+.speed-veryslow,.speed-veryslow:after,.speed-veryslow span:before {
   transition: 2s;
   animation-duration: 2s;
   -webkit-transition: 2s;
@@ -128,7 +91,73 @@ animations are sectioned into hover effects and on event animations
 
 /* \\===========================================================================// */
 
+/* \\===============================linedrop================================// */
 
+.underlinecentergrow span {
+  position: relative;
+
+  text-decoration: none;
+}
+.underlinecentergrow span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  box-shadow:  0 -1px 0 0  inset, 0 -2px 0 0  inset;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+.underlinecentergrow span:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.underlineleftgrow
+{
+    position: relative;
+}
+
+.underlineleftgrow:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  box-shadow:  0 -1px 0 0  inset, 0 -2px 0 0  inset;
+  visibility: hidden;
+}
+
+.underlineleftgrow:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.underlinerightgrow
+{
+    position: relative;
+}
+
+.underlinerightgrow:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  box-shadow:  0 -1px 0 0  inset, 0 -2px 0 0  inset;
+  visibility: hidden;
+}
+
+.underlinerightgrow:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+/* \\===========================================================================// */
 /* HOVER EFFECTS */
 /* \\=============================underlineopacity=================================// */
 

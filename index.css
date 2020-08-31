@@ -30,8 +30,8 @@ position: relative;
 
 }
 .documentation {
-  overflow-x: hidden;
-  width: 100%;
+  margin: auto;
+  width: 70%;
   
   height: 100vh;
   position: relative;
@@ -58,9 +58,14 @@ option {
   text-align: center;
   margin-top: 8rem;
 }
+.green {
+  color: #9abe7c;
+}
+.red {
+  color: #b96e6e;
+}
 p {
   color: #ffffff;
-  
   font-size: 1.3rem;
   text-align: center;
 }
@@ -103,10 +108,21 @@ img {
   top: 0;
   right: 0;
 }
-
+.pm {
+  margin-top: 1rem;
+}
 .title {
+  text-align: center;
+  margin-top: 2rem;
   font-weight: 600;
   font-size: 5rem;
+  color: #ffffff;
+}
+.subtitle {
+  text-align: center;
+  margin-top: 4rem;
+  font-weight: 600;
+  font-size: 3.2rem;
   color: #ffffff;
 }
 .img {

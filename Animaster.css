@@ -87,6 +87,19 @@ animations are sectioned into hover effects and on event animations
 /* zoom animation keyframes */
 
 /* \\===========================================================================// */
+/* \\=================================Rotate================================// */
+.rotate:hover {
+  transform: rotate(3deg);
+}
+.zoominrotate:hover {
+
+  transform: rotate(3deg) scale(0.95);
+}
+.zoomoutrotate:hover {
+  transform: rotate(3deg) scale(1.05);
+}
+
+/* \\===========================================================================// */
 /* \\================================borderappear===================================// */
 
 .borderappear {
